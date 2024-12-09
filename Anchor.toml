@@ -2,15 +2,17 @@
 seeds = false
 skip-lint = false
 [programs.mainnet]
-btc_relay = "De2dsY5K3DXBDNzKUjE6KguVP5JUhveKNpMVRmRkazff"
+btc_relay = "3KHSHFpEK6bsjg3bqcxQ9qssJYtRCMi2S9TYVe4q6CQc"
 [programs.localnet]
-btc_relay = "De2dsY5K3DXBDNzKUjE6KguVP5JUhveKNpMVRmRkazff"
+btc_relay = "3KHSHFpEK6bsjg3bqcxQ9qssJYtRCMi2S9TYVe4q6CQc"
+[programs.devnet]
+btc_relay = "3KHSHFpEK6bsjg3bqcxQ9qssJYtRCMi2S9TYVe4q6CQc"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
+cluster = "mainnet"
 wallet = "~/mainnet.key"
 
 [scripts]
