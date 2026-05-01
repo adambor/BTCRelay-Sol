@@ -1,11 +1,14 @@
 [features]
 seeds = false
 skip-lint = false
-[programs.mainnet]
+
+[programs.devnet]
 btc_relay = "3KHSHFpEK6bsjg3bqcxQ9qssJYtRCMi2S9TYVe4q6CQc"
+
 [programs.localnet]
 btc_relay = "3KHSHFpEK6bsjg3bqcxQ9qssJYtRCMi2S9TYVe4q6CQc"
-[programs.devnet]
+
+[programs.mainnet]
 btc_relay = "3KHSHFpEK6bsjg3bqcxQ9qssJYtRCMi2S9TYVe4q6CQc"
 
 [registry]

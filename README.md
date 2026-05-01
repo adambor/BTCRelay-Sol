@@ -33,3 +33,15 @@ This can be done in 2 ways, because of solana's \~1.2kB transaction size limitat
 A party might start submitting valid bitcoin blockheaders to the bitcoin relay and not on the bitcoin main chain. However as those blockheaders must be valid a non-trivial amount of resources must be expedited on PoW. Cost of such an attack depends on whether there is at least 1 honest party submitting blockheaders to the relay:
 - if there are no honest parties, the cost of faking 1 blockheader can be expressed as value of lost bitcoin block reward incurred due to not submitting the blockheader to the main chain, which is currently 6.25 BTC ~ 140k usd
 - if there is at least 1 honest party, the adversary party needs to capture at least 51% of the bitcoin hashing power to overrun the honest chain submitted by honest party
+
+## Building
+
+Use the Node.JS build script which properly manages different keys for various bitcoin environments:
+- default key is used for mainnet and testnet3 deployment
+- testnet4 key is used for testnet4 deployments
+
+Usage:
+```bash
+npm i
+node build.js <mainnet/testnet3/testnet4>
+```
